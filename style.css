@@ -1,0 +1,77 @@
+/* Star Selector (Selects every element in the HTML file */
+* {
+    /* Includes the padding and border when setting the width or heigh for an element */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3d45b8;
+    color: #eef1ef;
+
+
+    /* Flexbox is used here to center the div with the id of "Container" vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Setting the height to 100vh so the div will be centered vertically in viewport */
+    height: 100vh;
+
+    /* Adding padding to the body element so the div container is not right up against the edge of the viewport on smaller screen sizes */
+    padding: 25px;
+}
+
+h2 {
+    /* Top Right/Left Bottom */
+    margin: 10px 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: #3D45B8;
+    border: none;
+
+    /* Button does not inherit text color. Must apply a new text color directly to element */
+    color: #eef1ef;
+
+    /* changes the cursor when hovering over a button */
+    cursor: pointer;
+
+    padding: 8px 12px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+#container {
+    background-color: #534599;
+    padding: 15px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+#result-container {
+    background-color: #222563;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 8px 10px 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#clipboard {
+    font-size: 20px;
+}
+
+#generate {
+    font-size: 16px;
+    width: 100%;
+    text-transform: uppercase;
+}
